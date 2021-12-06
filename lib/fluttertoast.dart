@@ -159,7 +159,8 @@ class FToast {
   removeCustomToast() {
     _timer?.cancel();
     _timer = null;
-    if (_entry != null) _entry!.remove();
+    //if (_entry != null) _entry!.remove();
+    _entry?.remove();
     _entry = null;
     _showOverlay();
   }
